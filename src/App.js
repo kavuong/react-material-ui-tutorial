@@ -27,9 +27,10 @@ function App() {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <Grid container direction="column" justify="center" alignItems="center">
+        <Grid container justify="center" alignItems="center">
           <Introduction name="James Do" description={DESCRIPTION_TEXT} />
-          <Section title="Description" />
+
+          <Section title="Organizations" />
         </Grid>
       </header>
     </div>
