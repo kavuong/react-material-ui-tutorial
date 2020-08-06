@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Grid,
-  Typography,
-  Container,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  IconButton,
-} from "@material-ui/core";
+import { Grid, Typography, Container, IconButton } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import ShareIcon from "@material-ui/icons/ShareRounded";

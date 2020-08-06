@@ -1,14 +1,6 @@
 import React from "react";
 import "./App.css";
-import {
-  Grid,
-  Typography,
-  Container,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-} from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 
 import Introduction from "./components/Introduction";
@@ -22,6 +14,9 @@ function App() {
     typography: {
       fontFamily: "Nunito Sans",
       h4: {
+        fontWeight: "bold",
+      },
+      h6: {
         fontWeight: "bold",
       },
     },
