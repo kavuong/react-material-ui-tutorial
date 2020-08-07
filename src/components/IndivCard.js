@@ -1,9 +1,7 @@
 import React from "react";
 
 import {
-  Grid,
   Typography,
-  Container,
   Card,
   CardActionArea,
   CardMedia,
@@ -26,9 +24,11 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   tag: {
-    backgroundColor: "purple",
+    marginTop: 5,
+    backgroundColor: "#7B82BE",
     width: "70%",
     borderRadius: 20,
+    color: "white",
   },
 });
 
@@ -40,8 +40,8 @@ export default function IndivCard(props) {
       <CardActionArea>
         <CardMedia className={classes.image} image={props.image} />
         <CardContent className={classes.content}>
-          <Typography variant="h6">{props.title}</Typography>
-          <Typography className={classes.tag} variant="h6">
+          <Typography variant="subtitle1">{props.title}</Typography>
+          <Typography className={classes.tag} variant="subtitle1">
             {props.involvement}
           </Typography>
         </CardContent>

@@ -55,51 +55,6 @@ export default function Section(props) {
           involvement="Volunteer"
         />
       </Grid>
-
-      {/* <Card>
-        <CardActionArea>
-          <CardMedia
-            className={classes.image}
-            image={require("../assets/blm.jfif")}
-          />
-        </CardActionArea>
-      </Card>
-      <Card>
-        <CardActionArea>
-          <CardMedia
-            className={classes.image}
-            image={require("../assets/blm.jfif")}
-          />
-        </CardActionArea>
-      </Card>{" "}
-      <Card>
-        <CardActionArea>
-          <CardMedia
-            className={classes.image}
-            image={require("../assets/blm.jfif")}
-          />
-        </CardActionArea>
-      </Card>{" "}
-      <Card>
-        <CardActionArea>
-          <CardMedia
-            className={classes.image}
-            image={require("../assets/blm.jfif")}
-          />
-        </CardActionArea>
-      </Card>{" "}
-      <Card>
-        <CardActionArea>
-          <CardMedia
-            className={classes.image}
-            image={require("../assets/blm.jfif")}
-          />
-          <CardContent>
-            <Typography variant="h5">Black Lives Matter</Typography>
-            <Typography variant="h6">Involvement</Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card> */}
     </Container>
   );
 }
