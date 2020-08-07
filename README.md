@@ -2,6 +2,10 @@
 
 Welcome! This is the intro to React.js workshop, presented by Kevin Vuong.
 
+Here is the final result:
+
+![https://dawn-advocacy.s3-us-west-1.amazonaws.com/sample-images/react-tutorial-hackathon.png](https://dawn-advocacy.s3-us-west-1.amazonaws.com/sample-images/react-tutorial-hackathon.png)
+
 There are three stages to the code tutorial, each placed in its own Git branch.
 * step-1-introduction-layout: layout of Introduction section
   * Skill Focus: MaterialUI Intro
