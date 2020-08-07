@@ -1,5 +1,11 @@
-import React from "react";
-import { Grid, Typography, Container, IconButton } from "@material-ui/core";
+import React, { useState } from "react";
+import {
+  Grid,
+  Typography,
+  Container,
+  IconButton,
+  Input,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import ShareIcon from "@material-ui/icons/ShareRounded";
@@ -24,18 +30,37 @@ const useStyles = makeStyles({
 export default function Introduction(props) {
   const classes = useStyles();
 
+  const [editing, setEditing] = useState(false);
+  const [name, setName] = useState(props.name);
+  const [description, setDescription] = useState(props.description);
+
   return (
     <Container>
       <Grid container className={classes.start}>
         <Grid item xs={12} sm={6}>
           <Grid item xs={12} sm={9}>
-            <Typography variant="h4">{props.name}</Typography>
-            <Typography variant="h5">{props.description}</Typography>
+            {editing ? (
+              <Input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              ></Input>
+            ) : (
+              <Typography variant="h4">{name}</Typography>
+            )}
+
+            {editing ? (
+              <Input
+                onChange={(e) => setDescription(e.target.value)}
+                value={description}
+              ></Input>
+            ) : (
+              <Typography variant="h5">{description}</Typography>
+            )}
             <div>
               <IconButton>
                 <ShareIcon className={classes.icon} />
               </IconButton>
-              <IconButton>
+              <IconButton onClick={() => setEditing(!editing)}>
                 <EditOutlinedIcon className={classes.icon} />
               </IconButton>
             </div>

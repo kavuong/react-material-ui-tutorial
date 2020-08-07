@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Typography,
@@ -6,13 +6,14 @@ import {
   CardActionArea,
   CardMedia,
   CardContent,
+  Input,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   card: {
     width: 210,
-    height: 247,
+    // height: flex,
   },
   image: {
     height: 150,
@@ -34,16 +35,32 @@ const useStyles = makeStyles({
 
 export default function IndivCard(props) {
   const classes = useStyles();
+  const [title, setTitle] = useState(props.title);
+  const [involvement, setInvolvement] = useState(props.involvement);
 
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia className={classes.image} image={props.image} />
         <CardContent className={classes.content}>
-          <Typography variant="subtitle1">{props.title}</Typography>
-          <Typography className={classes.tag} variant="subtitle1">
-            {props.involvement}
-          </Typography>
+          {props.editing ? (
+            <Input
+              onChange={(e) => setTitle(e.target.value)}
+              value={title}
+            ></Input>
+          ) : (
+            <Typography variant="subtitle1">{title}</Typography>
+          )}
+          {props.editing ? (
+            <Input
+              onChange={(e) => setInvolvement(e.target.value)}
+              value={involvement}
+            ></Input>
+          ) : (
+            <Typography className={classes.tag} variant="subtitle1">
+              {involvement}
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
     </Card>

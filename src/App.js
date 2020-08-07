@@ -7,7 +7,7 @@ import Introduction from "./components/Introduction";
 import Section from "./components/Section";
 
 const DESCRIPTION_TEXT = `I love talking about the Asian American Experience in a medical lens.
-Let's connect!`;
+ Let's connect!`;
 
 function App() {
   const theme = createMuiTheme({
