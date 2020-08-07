@@ -34,53 +34,6 @@ function App() {
           <EditOutlinedIcon />
         </div>
       </Container>
-      <Container style={{ flex: 1 }}>
-        <Typography variant="h6">Organizations</Typography>
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              className={classes.image}
-              image={require("./assets/blm.jfif")}
-            />
-          </CardActionArea>
-        </Card>
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              className={classes.image}
-              image={require("./assets/blm.jfif")}
-            />
-          </CardActionArea>
-        </Card>{" "}
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              className={classes.image}
-              image={require("./assets/blm.jfif")}
-            />
-          </CardActionArea>
-        </Card>{" "}
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              className={classes.image}
-              image={require("./assets/blm.jfif")}
-            />
-          </CardActionArea>
-        </Card>{" "}
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              className={classes.image}
-              image={require("./assets/blm.jfif")}
-            />
-            <CardContent>
-              <Typography variant="h5">Black Lives Matter</Typography>
-              <Typography variant="h6">Involvement</Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Container>
     </Grid>
   );
 }
