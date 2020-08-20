@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Grid } from "@material-ui/core";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 import Introduction from "./components/Introduction";
 import Section from "./components/Section";
@@ -29,13 +29,13 @@ function App() {
           rel="stylesheet"
         ></link>
       </header>
-      <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <Grid container justify="center" alignItems="center">
           <Introduction name="James Do" description={DESCRIPTION_TEXT} />
 
           <Section title="Organizations" />
         </Grid>
-      </MuiThemeProvider>
+      </ThemeProvider>
     </div>
   );
 }
