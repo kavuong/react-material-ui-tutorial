@@ -11,8 +11,8 @@ function App() {
       {/* Grid with container attribute makes a grid that abides by the flex layout model */}
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <Typography variant="h1">James Do</Typography>
-          <Typography variant="subtitle">
+          <Typography variant="h4">James Do</Typography>
+          <Typography variant="h5">
             I love talking about the Asian American Experience in a medical
             lens. Let's connect!
           </Typography>
