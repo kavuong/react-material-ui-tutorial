@@ -15,7 +15,7 @@ There are three stages to the code tutorial, each placed in its own Git branch.
 - step-2-organization-layout: layout of Organizations section
   - Skill Focus: Refactoring Code Using Reusable Components
 - step-2.5-styling: finalizing styling of the UI
-  - Not explicitly covered in the presentation
+  - Skill Focus: styling within React
 - step-3-editing-states: adding editing states to edit buttons
   - Skill Focus: State Management in React
 
