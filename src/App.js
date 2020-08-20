@@ -27,29 +27,13 @@ function App() {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <Grid container justify="center" alignItems="center">
-          <Introduction name="James Do" description={DESCRIPTION_TEXT} />
-
-          <Section title="Organizations" />
-        </Grid>
       </header>
+      <Grid container justify="center" alignItems="center">
+        <Introduction name="James Do" description={DESCRIPTION_TEXT} />
+
+        <Section title="Organizations" />
+      </Grid>
     </div>
-    //   <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
