@@ -1,15 +1,6 @@
 import React from "react";
 import "./App.css";
-import {
-  Grid,
-  Typography,
-  Container,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import { Grid, Typography, Container } from "@material-ui/core";
 import ShareIcon from "@material-ui/icons/Share";
 import EditOutlinedIcon from "@material-ui/icons/EditOutlined";
 
