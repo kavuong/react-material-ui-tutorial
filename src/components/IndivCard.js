@@ -1,9 +1,7 @@
 import React from "react";
 
 import {
-  Grid,
   Typography,
-  Container,
   Card,
   CardActionArea,
   CardMedia,
@@ -14,7 +12,6 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   card: {
     width: 210,
-    height: 247,
   },
   image: {
     height: 150,
@@ -26,9 +23,11 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   tag: {
-    backgroundColor: "purple",
+    marginTop: 5,
+    backgroundColor: "#7B82BE",
     width: "70%",
     borderRadius: 20,
+    color: "white",
   },
 });
 
