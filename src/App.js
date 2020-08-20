@@ -32,14 +32,14 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
           rel="stylesheet"
         ></link>
-        <MuiThemeProvider theme={theme}>
-          <Grid container justify="center" alignItems="center">
-            <Introduction name="James Do" description={DESCRIPTION_TEXT} />
-
-            <Section title="Organizations" />
-          </Grid>
-        </MuiThemeProvider>
       </header>
+      <MuiThemeProvider theme={theme}>
+        <Grid container justify="center" alignItems="center">
+          <Introduction name="James Do" description={DESCRIPTION_TEXT} />
+
+          <Section title="Organizations" />
+        </Grid>
+      </MuiThemeProvider>
     </div>
   );
 }
