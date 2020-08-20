@@ -39,8 +39,8 @@ export default function IndivCard(props) {
       <CardActionArea>
         <CardMedia className={classes.image} image={props.image} />
         <CardContent className={classes.content}>
-          <Typography variant="h6">{props.title}</Typography>
-          <Typography className={classes.tag} variant="h6">
+          <Typography variant="subtitle1">{props.title}</Typography>
+          <Typography className={classes.tag} variant="subtitle1">
             {props.involvement}
           </Typography>
         </CardContent>
