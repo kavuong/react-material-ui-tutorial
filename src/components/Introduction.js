@@ -8,8 +8,8 @@ export default function Introduction(props) {
     <Container>
       <Grid container>
         <Grid item xs={12} sm={6}>
-          <Typography variant="h1">{props.name}</Typography>
-          <Typography variant="subtitle">{props.description}</Typography>
+          <Typography variant="h4">{props.name}</Typography>
+          <Typography variant="h5">{props.description}</Typography>
           <div>
             <IconButton>
               <ShareIcon />
