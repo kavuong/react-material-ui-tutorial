@@ -28,16 +28,18 @@ export default function Introduction(props) {
     <Container>
       <Grid container className={classes.start}>
         <Grid item xs={12} sm={6}>
-          <Typography variant="h4">{props.name}</Typography>
-          <Typography variant="h5">{props.description}</Typography>
-          <div>
-            <IconButton>
-              <ShareIcon className={classes.icon} />
-            </IconButton>
-            <IconButton>
-              <EditOutlinedIcon className={classes.icon} />
-            </IconButton>
-          </div>
+          <Grid item xs={12} sm={9}>
+            <Typography variant="h4">{props.name}</Typography>
+            <Typography variant="h5">{props.description}</Typography>
+            <div>
+              <IconButton>
+                <ShareIcon className={classes.icon} />
+              </IconButton>
+              <IconButton>
+                <EditOutlinedIcon className={classes.icon} />
+              </IconButton>
+            </div>
+          </Grid>
         </Grid>
         <Grid item xs={12} sm={6}>
           <img src="https://dawn-advocacy.s3-us-west-1.amazonaws.com/sample-images/Rectangle+64.png"></img>
